@@ -22,7 +22,7 @@ class ServiceMp3 {
                         let id = self.getID(path: item["href"] as! NSString)
                         // Link API
                         if let url = URL(string:"http://api.mp3.zing.vn/api/mobile/song/getsonginfo?keycode=fafd463e2131914934b73310aa34a23f&requestdata={\"id\":\"\(id)\"}".addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!) {
-                            
+                            // Commit1
                             var stringData: String?
                             do {
                                 stringData = try String(contentsOf: url)
